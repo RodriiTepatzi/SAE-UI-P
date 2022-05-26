@@ -1,0 +1,178 @@
+@import url('sidebar.css');
+@import url('colors.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: var(--primaryColor);
+  }
+  
+::selection {
+    color: white;
+    background: var(--primaryColor);
+}
+
+.w100 {
+    font-weight: 100;
+}
+
+.w200 {
+    font-weight: 200;
+}
+
+.w300 {
+    font-weight: 300;
+}
+
+.w400 {
+    font-weight: 400;
+}
+
+.w500 {
+    font-weight: 500;
+}
+
+.w600 {
+    font-weight: 600;
+}
+
+.w700 {
+    font-weight: 700;
+}
+
+.w800 {
+    font-weight: 800;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.fit-container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+
+.justify-center {
+    text-align: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-15 {
+    padding: 15px;
+}
+
+.padding-30 {
+    padding: 50px;
+}
+
+.center {
+    margin: auto;
+}
+
+.blue {
+    color: blue;
+}
+
+.white{
+    color: #fff;
+}
+
+.blue-bg {
+    background-color: blue;
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+.bg-light-2 {
+    background-color: var(--bg-light-2);
+}
+
+.bg-dark {
+    background-color: black;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+}
+
+.text {
+    font-size: 1rem;
+}
+
+.border {
+    border: 1px solid var(--borderColor);
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.form-field-icon {
+	padding: 8px 0px;	
+	position: relative;	
+}
+
+.field-icon {
+	position: absolute;
+    left: -10px;
+	top: 18px;
+	color: var(--primaryColor);
+}
+
+.field-input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 20px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.field-input:active,
+.field-input:focus,
+.field-input:hover {
+	outline: none;
+	border-bottom-color: var(--primaryColor);
+}
+
+.form-button{
+    background-color: var(--primaryColor);
+    border: none;
+    width: calc(100% - 25px);
+    padding: 10px;
+    transition: .2s;
+}
+
+.form-button:hover{
+    background-color: var(--hoverPrimary);
+    transition: .2s;
+}
