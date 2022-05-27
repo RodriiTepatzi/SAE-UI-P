@@ -1,0 +1,11 @@
+@media (min-width: 100px) and (max-width: 800px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 801px){
+    .row{
+        flex-direction: row;
+    }
+}

@@ -8,63 +8,313 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="area">
+    <div class="wrapper" id="wrapper">
+        <span class="circle circle-1"></span>
+        <span class="circle circle-2"></span>
+        <span class="circle circle-3"></span>
+        <span class="circle circle-4"></span>
+        <span class="circle circle-5"></span>
+        <span class="circle circle-6"></span>
+        <span class="circle circle-7"></span>
+        <span class="circle circle-8"></span>
+    </div>
+
+    <div class="area" id="content">
         <div class="container">
-            <div class="large-card shadow-1 radius padding-15 bg-light">
-                <div class="row">
-                    <div class="column">
-                        <div class="text light-dark">
-                            Total:
+            <div class="column">
+                <div class="title bold tl-padding-15">
+                    Bienvenido, %usuario%
+                </div>
+                <div class="large-card shadow-1 radius padding-15 bg-light">
+                    <div class="row">
+                        <div class="column grow">
+                            <div class="text light-dark">
+                                Total:
+                            </div>
+                            <div class="row">
+                                <div class="subtitle">
+                                    $450,378.00
+                                </div>
+                                <div class="info danger radius">
+                                    -5%
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
+                        <div class="column grow">
+                            <div class="text light-dark">
+                                Ordenes completas:
+                            </div>
                             <div class="subtitle">
-                                $ 450,378.00
-                            </div>
-                            <div class="info danger radius">
-                                5%
+                                117
                             </div>
                         </div>
+                        <div class="column grow">
+                            <div class="text light-dark">
+                                Ordenes incompletas:
+                            </div>
+                            <div class="subtitle">
+                                8
+                            </div>
+                        </div>
+                        <div class="column grow">
+                            <div class="text light-dark">
+                                Total ordenes:
+                            </div>
+                            <div class="row">
+                                <div class="subtitle">
+                                    225
+                                </div>
+                                <div class="info radius success">
+                                    24%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column grow">
+                            <div class="text light-dark">
+                                ¿Comparar?
+                            </div>
+                            <div class="padding-5">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="column">
-                        <div class="text light-dark">
-                            Ordenes completas:
-                        </div>
-                        <div class="subtitle">
-                            117
+                </div>
+                <div class="row">
+                    <div class="large-card shadow-1 radius padding-15 bg-light grow">
+                        <div class="column grow">
+                            <div class="small-title bold">
+                                Saldos
+                            </div>
+                            <div class="row t-padding-15">
+                                <div class="column grow">
+                                    <div class="text light-dark">
+                                        Liquidez total
+                                    </div>
+                                    <div class="row">
+                                        <div class="subtitle">
+                                            $225,771.98
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column grow">
+                                    <div class="text light-dark">
+                                        Profit mensual
+                                    </div>
+                                    <div class="row">
+                                        <div class="subtitle">
+                                            $57,152.14
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row t-padding-15">
+                                <div class="column grow">
+                                    <div class="text light-dark">
+                                        Gastos de entrega
+                                    </div>
+                                    <div class="row">
+                                        <div class="subtitle">
+                                            $55,771.98
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column grow">
+                                    <div class="text light-dark">
+                                        Costos de venta
+                                    </div>
+                                    <div class="row">
+                                        <div class="subtitle">
+                                            $17,774.85
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="action border radius">
+                                    Ver más
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="text light-dark">
-                            Ordenes incompletas:
-                        </div>
-                        <div class="subtitle">
-                            8
+                    <div class="large-card shadow-1 radius padding-15 bg-light grow">
+                        <div class="column">
+                            <div class="row">
+                                <div class="small-title bold">
+                                    Tareas - <a href="#">Hoy</a>
+                                </div>
+                                <div class="info success radius">
+                                    <a href="#">Agregar nuevo</a>
+                                </div>
+                            </div>
+                            <div class="column t-padding-15">
+                                <label class="control control-checkbox">
+                                    Pagar los impuestos
+                                    <input type="checkbox" checked="checked">
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    Surtir las ordenes
+                                    <input type="checkbox">
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    Solicitar estados financieros
+                                    <input type="checkbox">
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    Pagar los impuestos
+                                    <input type="checkbox">
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    Solicitar marketing
+                                    <input type="checkbox">
+                                    <div class="control_indicator"></div>
+                                </label>
+                                <label class="control control-checkbox">
+                                    Checar campañas publicitarias
+                                    <input type="checkbox" disabled>
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="text light-dark">
-                            Última orden:
-                        </div>
-                        <div class="subtitle">
-                            Hoy
+                </div>
+                <div class="row">
+                    <div class="large-card shadow-1 radius padding-15 bg-light grow">
+                        <div class="column grow">
+                            <div class="small-title bold">
+                                Chat
+                            </div>
+                            <div class="text light-dark">
+                                Último mensaje: 26/05/22 12:20 AM
+                            </div>
+                            <div class="column grow message">
+                                <div class="row t-padding-15 grow">
+                                    <img src="data:image/png;base64,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" class="message-pfp">
+                                    <div class="column l-padding-15 grow">
+                                        <div class="small-text bold">
+                                            Rodrii Tepatzi
+                                        </div>
+                                        <div class="small-text light-dark">
+                                            CEO
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="row">
+                                            <div class="small-text light-dark r-padding-15">
+                                                26/05/22 12:20AM
+                                            </div>
+                                            <a href="#" class="action small-text border radius no-margin">
+                                                ...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-text">
+                                    Hola, buenos días.
+                                </div>
+                            </div>
+                            <div class="span"></div>
+                            <div class="column grow message">
+                                <div class="row t-padding-15 grow">
+                                    <img src="data:image/png;base64,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" class="message-pfp">
+                                    <div class="column l-padding-15 grow">
+                                        <div class="small-text bold">
+                                            Rodrii Tepatzi
+                                        </div>
+                                        <div class="small-text light-dark">
+                                            CEO
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="row">
+                                            <div class="small-text light-dark r-padding-15">
+                                                26/05/22 12:20AM
+                                            </div>
+                                            <a href="#" class="action small-text border radius no-margin">
+                                                ...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-text">
+                                    Hola, buenos días.
+                                </div>
+                            </div>
+                            <div class="span"></div>
+                            <div class="column grow message">
+                                <div class="row t-padding-15 grow">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACBCAMAAADQfiliAAABBVBMVEUzcYD///8dHR70s4IUFBRKSlTio3kAAADU1tiGtNHz+v80dIMfaHgna3swb386dYTW4OMSCAP/u4jz9/eZs7pyl6FbipZGfYuwxMlThJDs8fK3ys+pvsRjjpmNq7OiucDL2NwAYHLNhlaAoavin2/XkmMcGBhDQ00eIyY0NDonJyo8PEMsWmUQAAAvZXIAAAskQEhGNSqjlYJVeH67nYGUjoHIo4PiroVifX7Up4FufHrs2s9zdHrv493nt5U3NkKytbqgw9mKi5FhYmofLjOen6TBwsUoTlgCHyV2mrNjeo1MTU9siqBYZXROVWF+gYKedVa3hmMyJx+BXkfOmG9cRTTctZ2CkaIWAAAJ8klEQVR4nLWbC1vaSBeAAwaGmmQSQcSGorC6BIUFWrW2W1upcqnrrnip3///Kd9ckhBymXOi7Xme3SIkc96c20zmohVeIjWnvbt9UN9p2LZm242d+sH2btupvagtLe8NrrNbf2tblmlZFtWoprH/qCX+tt/Wdx339xK4zXrDNC2uN02oZZqNejMfRA6C2ruW2aFZ2kMK2jFb73I4BEtQa7Y6JqQ9pDA7rSYWAkfg7jPPI9VLYVGxj/MGhsDds81c6qWY9h6GASaobZv5Hj9iCHMb9gVIsG+i3Z8Uapr7ryRoN15i/6iYjfYrCGp7r3j+lR32lK5QEbSN1xpAimmozKAg2Ou83gBSaGfvBQRu69cYQIrZykzMLALHxqSgIQVxpWU7+QiaoAe4ZjqQQimMQTvNPATbHUg/HYx7+lYoxeliqAEQ5jaeYA8KgeGYadejwih6i6GawUyNxzSCAzWAMZzG1AcU+lhtB/MAR3CgdoGx+CtVv2RQm6GTgpAkULvAoNNM/YJhoLZC0hEJgm21CwAAJgBCIhzjBE0gBkAAvQiEYzwpYwQOEANjEADyg9ZxVASurSxExuAvEIAZQR2N1HYVBC11KaY9BACIYLWyCYBKZCxgH0gZKttZT4goQRuqxUUkABSNnXY6Qc1Q90Z4E+hbC3UoGLVUAqg3MKZYAIagDqioH1YEbXBEAifCqBsQjIGq0E4haAAjAtYfAPrJ6P5hFPyhDkbaSBLsQyaAqhF5vC9XQwIgErTVe0RAUINHhVOV+fX3DxvVjY2VDabQeKUWIwA6JCY0Wz0hTz+5/iiBDjg17KJ8Ahd+NaHpYUDI6OlBqmfykwTfQ90DNd01gj1wZJzeJ4zIM/P+RijlLpZAs/aiBK4NATCCRCCS0WNg/UCqjyEBEIqa5vdQGi4RUioie/yHdfWc4BmbDGE6CIIabIJYMo7I+/uEek7wQNAEml0LCZqI96MoAdHj1k8GAhgHLBKaIQEwLIgRjB7Xgi9mhKfADeqiKAhaAUEN6pWjBCM91fyhBPkIdNBCOjWf4B3mLdknIE9K/UyeBQLUNQkx3/kELcw8gcwF8gDoD40AO4FVpZYkcFETBcaCjHTyHgTYqL4nLFV+oGY/eF3U+Js64lrr0+nP+9HoAQTgfcPo6efpJ8z8A3+jZwR1BC5dVjeqLNPKCIKyrrNcqS4xzdY5gQsNTbiY57ztxy4CgF/GQc8RzqUNlxE4mDAwuf+rj4gw4IHwKP7BuMF0GMEuhtWQBM8ogudHcbX6/csn2GUEdQwrFW0+4wiehKmqGoLAqjOCt5i8kV54esIRiMtQXqBvCxqmX/Qjsfp0jyK4l6CoMmPXNAc1dW9+RKgOEUTOfkYRWI7WRhFYHzBPv4bxAddwW8OkAq9IOQE2Ns5wdXlX20ah0pPcBCcoAmtbO8At4ciimEPOce1aBxqqHLArz/IFAjIMWEHQdnCLCLndgHOCRne0BupCBpsvFs+w63MNDVO9JQK1kSlZ/WBTLAC1NVRJ9K/GegLpASE59DOxTlEAp/lWSPMw0BNUv5DHBEw/Og64WKeIkWouE7A4wOaCvF5bU3Z4eBj+fyWYccFKGth64Eu0MB3+uZIVQxWdh/KZdrA1MUT4GCL8+UdEQoCPOdurY/uFQKi96iAOQ/0rE5zniivRL+D6xghCtCgcck+shUGuPNBE34gbH0Tv+aRIBNSbUlTY+AA3RkIi5AbgYyTcOHH9rpPztLJQPT95QVsOcqy8LlRLK8+n+QqBFDZWxr0vxBHMzwmAzy/Zr8HfF3DvTHGxPpTXX6PLZeSgKNZOHfnemBB6Vi5HGPgfuLFxTMR7I+rdOUHwd1mKr57J3y8icLDzBwmCT+W4fHpJM2L+ADWH8rsI6vh5pJhYKQQviER/Hgk3lxYVSltnCYKzFrh3MSH+XBpuPjEKoDU3v57HAM6/bjbzlqRgPhE3pxoVp7C5ufmlfBiqPyx/Yd8UnJzthHOqqHnlUIyBAOAM3yTD4bev8ouCA0+oRyWcV0bNrfMdSBodDgd33sVmIF+/sUFioJ/JhXc3HLJwQG2Sisytw+sLXPlgMZ72il2vVLqcFEKdX/630l+YXJZKXrE3nY4XQwRGZH1B3T/yvVfjaZdJkUmJixPodL+/+e4GPI74jV/U7W51p+MBVUNE1lgU60xi89WWVM5FZzYoeddSqfP9DZfvEqhwLX7Tg0sZRm/BKLKajq4zZa21Gdpw3FtpFwR9/px94YdK+42UdkX4QP6kRy/vFnvjrO1ia2ttqeuNhraYrqvnTR4JU/fdTadSqfg2YJ+cTVcAlI4Sd3SngzSG9fXGlDVXw1j04o1xkQTeRUWIIJAfLzxJkHJPt7dIRER8zTWx7mwMUvUXi8dCT+lOqm0ygKb8eCd/OE69q9uLV4r4unN87d0Yp+svFntS0eUkNIL8wDORSy/jvm5s/TGx9h5Lh0yAYlEa27uKEVz532fe1x2vAST2H6ztwci2QEhQuo4RXJcAAoawskLaHozIPhRjoADoypAvleZcb1vkIpO5/21fdesqFlL3oaz24hhTRTN+MpS82VokznzTpKVCSBDuy0jfi7Paj0RVAEEyeBe8IOwygl1eDvxczEiFACFQkLEfKdiTpXRCUfQMwhMVvyTxglQp+d8q7wzckLUnK/CDsVATHMnSLNwQEAgnsIKsckKYkdn70vyBgjoMmOgiFLxlhGApnHCkq2+UgaDam+fvT9xStxNEQilSlUuIKGCypUH7E8UezSFAoPtBdzkPCeZ+QfQAI2wNoT2a/OUBCoNVNlz53XM7KIigDVggJDaPJ/fqWqqCKKUf9I9NQdAM+sU+dGN3bIF7dVlC/IDaCfuGcHwA9Qmh/EDsVy4ULgjYkKyLlzOfYHYJ1kMp5CKpLm3fOgLBk27wCaQTYBOkAaTv3V+CCDIY7/xx4h0qDItkmaYs/fzCFYQge0jvRgDceFCvKAGuUnVlnOGYEKg9MTL/RxD84yF80CWTdFVZ51jmx4AZpB8EAcYH5HieoSnzLE/lFkDoB24QTgBKAbmtZCnKPs9UA+KRG8H7lxH86ykGqD7AMvtYl+pM17yoZOBF4T9G8B9UCkgxywMQQcFdElVXw57dYwSeOgx1slQecwTO9s2PFGZgfujfvLnpK8OQHKkMABMUajOSycCGSiwfWS72My1FyAw6Ywmf8XSvshlYWby5yx4cEnIFnzNFnXNd9jIK1BHLBi8jDLukpw6AHASMYXacHpNe6S49DHVyPPt1Z3251Ca3JAXiOLUa6oTcTn7teWch7oxDrFOwYIyFId/FfYt8/LwEHGJyfRSj8GLaj64nv+3cuw9RmV33j5kqRhKEZ1f+edy/nlV+89n/FcZ8crVkJLw76DHNy6vJPL9yIf8HECopyM2lKHMAAAAASUVORK5CYII=" class="message-pfp">
+                                    <div class="column l-padding-15 grow">
+                                        <div class="small-text bold">
+                                            Rodrii Tepatzi
+                                        </div>
+                                        <div class="small-text light-dark">
+                                            CEO
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="row">
+                                            <div class="small-text light-dark r-padding-15">
+                                                26/05/22 12:20AM
+                                            </div>
+                                            <a href="#" class="action small-text border radius no-margin">
+                                                ...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-text">
+                                    Hola, buenos días.
+                                </div>
+                            </div>
+                            <div class="span"></div>
+                            <div class="column grow message">
+                                <div class="row t-padding-15 grow">
+                                    <img src="data:image/png;base64,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" class="message-pfp">
+                                    <div class="column l-padding-15 grow">
+                                        <div class="small-text bold">
+                                            Rodrii Tepatzi
+                                        </div>
+                                        <div class="small-text light-dark">
+                                            CEO
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="row">
+                                            <div class="small-text light-dark r-padding-15">
+                                                26/05/22 12:20AM
+                                            </div>
+                                            <a href="#" class="action small-text border radius no-margin">
+                                                ...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-text">
+                                    Hola, buenos días.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="text light-dark">
-                            ¿Comparar?
-                        </div>
-                        <div class="padding-5">
-                            <label class="switch">
-                                <input type="checkbox" checked>
-                                <span class="slider round"></span>
-                            </label>
+                    <div class="large-card shadow-1 radius padding-15 bg-light grow">
+                        <div class="column">
+                            <div class="small-title bold">
+                                Últimas ordenes
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
-    <nav class="main-menu">
+    <nav class="main-menu" id="menu">
         <ul>
             <li>
                 <a href="index.html">
@@ -73,7 +323,6 @@
                         Inicio
                     </span>
                 </a>
-
             </li>
             <li class="has-subnav">
                 <a href="#">
@@ -143,7 +392,6 @@
                 </a>
             </li>
         </ul>
-
         <ul class="logout">
             <li>
                 <a href="login.html">
@@ -155,6 +403,8 @@
             </li>
         </ul>
     </nav>
+
+    <script src="./js/loader.js"></script>
 </body>
 
 </html>
