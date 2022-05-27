@@ -3,4 +3,8 @@
     --hoverPrimary: rgb(214, 0, 0);
     --borderColor: rgb(219, 219, 219);
     --bg-light-2: rgb(245,245,245);
+    --text-color: rgb(71, 71, 71);
+    --text-color-light: rgb(180, 180, 180);
+    --danger-color: rgb(255, 236, 236);
+    --danger-text-color: rgb(255, 102, 102);
 }

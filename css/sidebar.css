@@ -25,7 +25,7 @@ nav.main-menu.expanded {
 }
 
 .main-menu {
-    background: var(--bg-light);
+    background: white;
     border-right: 1px solid #e5e5e5;
     position: absolute;
     top: 0;
@@ -55,6 +55,7 @@ nav.main-menu.expanded {
     display: table;
     border-collapse: collapse;
     border-spacing: 0;
+    background-color: white;
     color: rgb(71, 71, 71);
     font-family: arial;
     font-size: 14px;
@@ -72,7 +73,7 @@ nav.main-menu.expanded {
     height: 36px;
     text-align: center;
     vertical-align: middle;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .main-menu .nav-text {
@@ -128,16 +129,18 @@ nav.main-menu li.active>a,
 .dropdown-menu>.active>a:hover,
 .dropdown-menu>.active>a:focus,
 .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
-.dashboard-page nav.dashboard-menu ul li.active a {
-    color: #fff;
+.dashboard-page nav.dashboard-menu ul li.active a
+/*.nav-text:hover .nav-text .nav-text:hover*/
+{
+    color: white;
     background-color: var(--primaryColor);
 }
 
 .area {
     float: right;
-    background: #e2e2e2;
-    width: calc(100% - 65px);
-    height: 100%;
+    background: var(--bg-light-2);
+    width: calc(100% - 60px);
+    min-height: 100vh;
     z-index: -1;
     overflow: hidden;
 }

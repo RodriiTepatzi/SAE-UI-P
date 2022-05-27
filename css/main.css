@@ -8,11 +8,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+    /* Code for Firefox */
     color: white;
     background: var(--primaryColor);
-  }
-  
+}
+
 ::selection {
     color: white;
     background: var(--primaryColor);
@@ -50,7 +51,7 @@
     font-weight: 800;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
@@ -64,6 +65,7 @@
     width: fit-content;
     height: fit-content;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .justify-center {
@@ -71,7 +73,32 @@
 }
 
 .column {
+    display: inherit;
     flex-direction: column;
+    flex-grow: 1;
+}
+
+.row {
+    display: inherit;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.margin-8 {
+    margin: 8px
+}
+
+.row-gap-12 {
+    margin: 0 0 0 12px;
+}
+
+.row-gap-24 {
+    margin: 0 0 0 24px;
+}
+
+.row-gap-48 {
+    margin: 0 0 0 48px;
 }
 
 .padding-5 {
@@ -98,7 +125,11 @@
     color: blue;
 }
 
-.white{
+.light-dark {
+    color: var(--text-color-light);
+}
+
+.white {
     color: #fff;
 }
 
@@ -118,8 +149,12 @@
     background-color: black;
 }
 
-.subtitle {
+.title {
     font-size: 1.8rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
 }
 
 .text {
@@ -135,36 +170,36 @@
 }
 
 .form-field-icon {
-	padding: 8px 0px;	
-	position: relative;	
+    padding: 8px 0px;
+    position: relative;
 }
 
 .field-icon {
-	position: absolute;
+    position: absolute;
     left: -10px;
-	top: 18px;
-	color: var(--primaryColor);
+    top: 18px;
+    color: var(--primaryColor);
 }
 
 .field-input {
-	border: none;
-	border-bottom: 2px solid #D1D1D4;
-	background: none;
-	padding: 10px;
-	padding-left: 20px;
-	font-weight: 700;
-	width: 75%;
-	transition: .2s;
+    border: none;
+    border-bottom: 2px solid #D1D1D4;
+    background: none;
+    padding: 10px;
+    padding-left: 20px;
+    font-weight: 700;
+    width: 75%;
+    transition: .2s;
 }
 
 .field-input:active,
 .field-input:focus,
 .field-input:hover {
-	outline: none;
-	border-bottom-color: var(--primaryColor);
+    outline: none;
+    border-bottom-color: var(--primaryColor);
 }
 
-.form-button{
+.form-button {
     background-color: var(--primaryColor);
     border: none;
     width: calc(100% - 25px);
@@ -172,7 +207,102 @@
     transition: .2s;
 }
 
-.form-button:hover{
+.form-button:hover {
     background-color: var(--hoverPrimary);
     transition: .2s;
+}
+
+.large-card {
+    width: 100%;
+    height: fit-content;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shadow-1 {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+}
+
+.info {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+    padding: 4px 6px;
+    font-size: 0.8rem;
+}
+
+.danger {
+    background-color: var(--danger-color);
+    color: var(--danger-text-color);
+}
+
+
+
+
+
+
+/* Switch */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 51px;
+    height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--primaryColor);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px none;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
