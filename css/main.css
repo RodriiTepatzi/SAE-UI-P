@@ -2,6 +2,7 @@
 @import url('colors.css');
 @import url('responsive.css');
 @import url('loading.css');
+@import url('upload.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
@@ -10,7 +11,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -76,6 +77,10 @@ a{
     flex-wrap: wrap;
 }
 
+.overflow-h{
+    overflow: hidden;
+}
+
 .justify-center {
     text-align: center;
 }
@@ -85,7 +90,7 @@ a{
     flex-direction: column;
 }
 
-.grow{
+.grow {
     flex-grow: 1;
 }
 
@@ -95,13 +100,23 @@ a{
     height: fit-content;
 }
 
-.r-padding-15{
+.r-padding-15 {
     padding: 15px;
 }
 
-.no-margin{
+.margin-15{
+    margin: 15px;
+}
+
+.margin-h-15{
+    margin: 15px;
+}
+
+.no-margin {
     margin: 0 !important;
 }
+
+
 
 .padding-5 {
     padding: 5px;
@@ -115,15 +130,15 @@ a{
     padding: 15px;
 }
 
-.t-padding-15{
+.t-padding-15 {
     padding-top: 15px;
 }
 
-.t-padding-5{
+.t-padding-5 {
     padding-top: 5px;
 }
 
-.l-padding-15{
+.l-padding-15 {
     padding-left: 15px;
 }
 
@@ -184,7 +199,7 @@ a{
     font-size: 1rem;
 }
 
-.small-text{
+.small-text {
     font-size: 0.8rem;
 }
 
@@ -192,7 +207,7 @@ a{
     border: 1px solid var(--borderColor);
 }
 
-.action{
+.action {
     width: fit-content;
     display: block;
     padding: 8px;
@@ -200,7 +215,7 @@ a{
     margin-top: 20px;
 }
 
-.span{
+.span {
     background-color: var(--span);
     margin: 8px 10px 0 0;
     height: 1px;
@@ -209,6 +224,17 @@ a{
 
 .radius {
     border-radius: 10px;
+}
+
+.form-field {
+    width: 100%;
+}
+
+.form-field>input {
+    width: calc(100% - 20px);
+    padding: 9.5px 6px;
+    border: 1px solid var(--span);
+    outline: none;
 }
 
 .form-field-icon {
@@ -254,7 +280,7 @@ a{
     transition: .2s;
 }
 
-.large-card{
+.large-card {
     margin: 10px;
     height: fit-content;
     display: flex;
@@ -279,23 +305,132 @@ a{
     color: var(--danger-text-color);
 }
 
+.accent {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
 .success {
     background-color: var(--success-color);
     color: var(--success-text-color);
 }
 
-.left{
+.text-danger{
+    color: var(--danger-text-color);
+}
+
+.text-success{
+    color: var(--success-text-color);
+}
+
+.text-warning{
+    color: var(--warning-text-color);
+}
+
+.left {
     float: left;
 }
 
-.right{
+.right {
     float: right;
 }
 
-.message-pfp{
+.message-pfp {
     height: 2rem;
     width: 2rem;
 }
+
+table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    background-color: var(--bg-light);
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: .35em;
+}
+
+table th{
+    background-color: var(--bg-light-3);
+}
+
+table th,
+table td {
+    padding: 1.5em .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 

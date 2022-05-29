@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <span class="circle circle-1"></span>
+        <span class="circle circle-2"></span>
+        <span class="circle circle-3"></span>
+        <span class="circle circle-4"></span>
+        <span class="circle circle-5"></span>
+        <span class="circle circle-6"></span>
+        <span class="circle circle-7"></span>
+        <span class="circle circle-8"></span>
+    </div>
+
+    <div class="area" id="content">
+        <div class="column">
+            <div class="row">
+                <div class="title bold padding-15">
+                    Ordenes
+                </div>
+            </div>
+
+            <div class="large-card shadow-1 radius padding-15 bg-light">
+                <div class="row">
+                    <div class="column grow">
+                        <div class="text light-dark">
+                            Total:
+                        </div>
+                        <div class="row">
+                            <div class="subtitle">
+                                $450,378.00
+                            </div>
+                            <div class="info danger radius">
+                                -5%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column grow">
+                        <div class="text light-dark">
+                            Ordenes completas:
+                        </div>
+                        <div class="subtitle">
+                            117
+                        </div>
+                    </div>
+                    <div class="column grow">
+                        <div class="text light-dark">
+                            Ordenes incompletas:
+                        </div>
+                        <div class="subtitle">
+                            8
+                        </div>
+                    </div>
+                    <div class="column grow">
+                        <div class="text light-dark">
+                            Total ordenes:
+                        </div>
+                        <div class="row">
+                            <div class="subtitle">
+                                225
+                            </div>
+                            <div class="info radius success">
+                                24%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column grow">
+                        <div class="text light-dark">
+                            ¿Comparar?
+                        </div>
+                        <div class="padding-5">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="padding-10 margin-h-15 radius bg-light shadow-1">
+                <div class="padding-15 radius">
+                    <div class="fit-container border radius overflow-h">
+                        <table>
+                            <thead>
+                              <tr class="small-text light-dark">
+                                <th scope="col">Número de order</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Método de pago</th>
+                                <th scope="col">Confirmado por el cliente</th>
+                              </tr>
+                            </thead>
+                            <tbody class="small-text">
+                              <tr>
+                                <td data-label="Número de orden">F-01020304</td>
+                                <td data-label="Estado" class="text-success">Completado</td>
+                                <td data-label="Total">$1,190</td>
+                                <td data-label="Fecha">03/01/2022</td>
+                                <td data-label="Método de pago">Efectivo</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020305</td>
+                                <td data-label="Estado" class="text-success">Completado</td>
+                                <td data-label="Total">$2,443</td>
+                                <td data-label="Fecha">02/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020306</td>
+                                <td data-label="Estado" class="text-warning">En progreso</td>
+                                <td data-label="Total">$1,181</td>
+                                <td data-label="Fecha">02/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020307</td>
+                                <td data-label="Estado" class="text-danger">Cancelado</td>
+                                <td data-label="Total">$842</td>
+                                <td data-label="Fecha">01/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">No</td>
+                              </tr>
+                              <tr>
+                                <td data-label="Número de orden">F-01020304</td>
+                                <td data-label="Estado" class="text-success">Completado</td>
+                                <td data-label="Total">$1,190</td>
+                                <td data-label="Fecha">03/01/2022</td>
+                                <td data-label="Método de pago">Efectivo</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020305</td>
+                                <td data-label="Estado" class="text-success">Completado</td>
+                                <td data-label="Total">$2,443</td>
+                                <td data-label="Fecha">02/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020306</td>
+                                <td data-label="Estado" class="text-warning">En progreso</td>
+                                <td data-label="Total">$1,181</td>
+                                <td data-label="Fecha">02/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020307</td>
+                                <td data-label="Estado" class="text-danger">Cancelado</td>
+                                <td data-label="Total">$842</td>
+                                <td data-label="Fecha">01/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">No</td>
+                              </tr>
+                              <tr>
+                                <td data-label="Número de orden">F-01020304</td>
+                                <td data-label="Estado" class="text-success">Completado</td>
+                                <td data-label="Total">$1,190</td>
+                                <td data-label="Fecha">03/01/2022</td>
+                                <td data-label="Método de pago">Efectivo</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020305</td>
+                                <td data-label="Estado" class="text-success">Completado</td>
+                                <td data-label="Total">$2,443</td>
+                                <td data-label="Fecha">02/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020306</td>
+                                <td data-label="Estado" class="text-warning">En progreso</td>
+                                <td data-label="Total">$1,181</td>
+                                <td data-label="Fecha">02/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020307</td>
+                                <td data-label="Estado" class="text-danger">Cancelado</td>
+                                <td data-label="Total">$842</td>
+                                <td data-label="Fecha">01/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">No</td>
+                              </tr>
+                              <tr>
+                                <td data-label="Número de orden">F-01020304</td>
+                                <td data-label="Estado" class="text-success">Completado</td>
+                                <td data-label="Total">$1,190</td>
+                                <td data-label="Fecha">03/01/2022</td>
+                                <td data-label="Método de pago">Efectivo</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020305</td>
+                                <td data-label="Estado" class="text-success">Completado</td>
+                                <td data-label="Total">$2,443</td>
+                                <td data-label="Fecha">02/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020306</td>
+                                <td data-label="Estado" class="text-warning">En progreso</td>
+                                <td data-label="Total">$1,181</td>
+                                <td data-label="Fecha">02/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">Si</td>
+                              </tr>
+                              <tr>
+                                <td scope="row" data-label="Número de orden">F-01020307</td>
+                                <td data-label="Estado" class="text-danger">Cancelado</td>
+                                <td data-label="Total">$842</td>
+                                <td data-label="Fecha">01/01/2022</td>
+                                <td data-label="Método de pago">Transferencia</td>
+                                <td data-label="Confirmado por el cliente">No</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="main-menu" id="menu">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">
+                        Inicio
+                    </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a href="#">
+                    <i class="fa fa-laptop fa-2x"></i>
+                    <span class="nav-text">
+                        Item
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="orders.html">
+                    <i class="fa fa-list fa-2x"></i>
+                    <span class="nav-text">
+                        Ordenes
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="files.html">
+                    <i class="fa fa-folder-open fa-2x"></i>
+                    <span class="nav-text">
+                        Archivos
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-bar-chart-o fa-2x"></i>
+                    <span class="nav-text">
+                        Estadisticas
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-font fa-2x"></i>
+                    <span class="nav-text">
+                        Item
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-table fa-2x"></i>
+                    <span class="nav-text">
+                        Tablas
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                    <span class="nav-text">
+                        Ubicaciones
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-info fa-2x"></i>
+                    <span class="nav-text">
+                        Documentacion
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="logout">
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-power-off fa-2x"></i>
+                    <span class="nav-text">
+                        Salir
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="./js/loader.js"></script>
+</body>
+
+</html>
